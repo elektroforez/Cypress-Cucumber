@@ -40,10 +40,6 @@ npm run report:merge
 npm run report:generate
 ```
 This will create a report in the `public` directory.
+### Html report is available on GitHub Pages 
+https://elektroforez.github.io/Cypress-Cucumber/
 
-   npm run deploy:report
-   ```
-5. Access the report via `https://your-username.github.io/your-repo/`.
-
----
-Happy testing! 🚀
