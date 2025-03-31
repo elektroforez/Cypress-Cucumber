@@ -19,7 +19,6 @@
     "delete-mochawesome-folder": "rm -f mochawesome-report/*.json",
     "test": "cypress run",
     "report:merge": "mochawesome-merge cypress/results/*.json -o index.json",
-    "report:generate": "marge index.json --reportDir mochawesome-report --assetsDir mochaawesome-report/assets --reportPageTitle index.html",
-    "deploy": "gh-pages -d mochawesome-report/mochawesome.html"
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   }
 }
