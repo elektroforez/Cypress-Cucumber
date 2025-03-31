@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "lib": ["es5", "dom"],
+      "moduleResolution": "nodenext",
+      "module": "nodenext",
+      "sourceMap": true,
+      "types": ["cypress", "node"],
+      "esModuleInterop": true 
+    },
+    "include": ["**/*.ts"]
+  }
