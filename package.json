@@ -3,6 +3,7 @@
     "@faker-js/faker": "^9.6.0",
     "cypress": "^14.2.1",
     "cypress-mochawesome-reporter": "^3.8.2",
+    "gh-pages": "^6.3.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^5.0.0",
     "mochawesome-report-generator": "^6.2.0",
@@ -16,7 +17,9 @@
     "delete:reports": "rm cypress/results/* || true",
     "prereport": "npm run delete:reports",
     "delete-mochawesome-folder": "rm -f mochawesome-report/*.json",
-    "merge-json": "npx mochawesome-merge --reportDir mochawesome-report > mochawesome1.json",
-    "html-generator": " npx mochawesome-report-generator mochawesome1.json"
+    "test": "cypress run",
+    "report:merge": "mochawesome-merge cypress/results/*.json -o index.json",
+    "report:generate": "marge index.json --reportDir mochawesome-report --assetsDir mochaawesome-report/assets --reportPageTitle index.html",
+    "deploy": "gh-pages -d mochawesome-report/mochawesome.html"
   }
 }
